@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_margin="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hashtag_bg">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:background="#000"
+        android:layout_height="120dp"
+        android:id="@+id/each_cloth_img"/>
+    <CheckBox
+        android:buttonTint="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/each_cloth_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:textSize="26sp"
+        android:id="@+id/each_cloth_txt"
+        android:text=""/>
+
+</RelativeLayout>

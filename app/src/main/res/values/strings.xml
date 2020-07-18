@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Dhobi Count</string>
+    <string-array name="category_selection">
+        <item>Shirts</item>
+        <item>Pants</item>
+        <item>Inners</item>
+    </string-array>
+</resources>

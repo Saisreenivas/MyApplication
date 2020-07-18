@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dailyuse.clothes.dhobicount.MainActivity">
+
+<!--    <ImageView
+        android:layout_width="60dp"
+        android:id="@+id/camera_click"
+        android:layout_height="60dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/camera_click"
+        android:paddingTop="12dp"
+        android:id="@+id/camera_data"
+        android:text="file-location \n file size"/>-->
+    <android.support.v7.widget.RecyclerView
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:divider="@android:color/black"
+        android:dividerHeight="1dp"
+        android:id="@+id/date_and_count_recycler"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#b6b6b6"
+        android:id="@+id/layout_add_btn"
+        android:layout_width="match_parent"
+        android:visibility="invisible"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-  Hide"
+                android:id="@+id/hide_id"
+                android:paddingLeft="10dp"
+                android:background="#b6b6b6"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:layout_gravity="start"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:paddingRight="10dp"
+                android:textAlignment="textEnd"
+                android:id="@+id/layout_add_btn_save"
+                android:background="#b6b6b6"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                />
+            </LinearLayout>
+        <View android:id="@+id/separator"
+              android:background="#000"
+              android:layout_margin="2dp"
+              android:layout_width = "fill_parent"
+              android:layout_height="2dp"
+              android:layout_centerVertical ="true"
+              android:layout_alignParentTop="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="28/10/2017"
+            android:id="@+id/layout_add_btn_date_present"
+            android:padding="5dp"
+            android:layout_margin="2dp"
+            android:background="#dcdcdc"
+            style="@style/Base.TextAppearance.AppCompat.Large"/>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:id="@+id/hashtag_text_recycler"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:background="@drawable/hashtag_bg"
+            android:id="@+id/add_specific_layout"
+            android:visibility="gone"
+            >
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:ems="10"
+                android:textSize="26sp"
+                android:background="#f5f5f5"
+                android:id="@+id/cloth_specific_count"
+                android:inputType="number"
+                android:visibility="gone"
+                android:textColor="#000"/>
+
+            <Button
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|end"
+                android:textAllCaps="true"
+                android:id="@+id/cloth_specific_btn"
+                android:background="#dadada"
+                android:text="Add"
+                android:textSize="14sp"/>
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:layout_below="@id/cloth_specific_btn"
+                android:id="@+id/cloth_specific_recycler"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
